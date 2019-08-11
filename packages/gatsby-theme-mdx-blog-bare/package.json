@@ -1,0 +1,21 @@
+{
+  "name": "gatsby-theme-mdx-blog-bare",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eunjae Lee <karis612@gmail.com> (https://github.com/eunjae-lee)",
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^2.13.57"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.2.2",
+    "@mdx-js/react": "^1.2.2",
+    "gatsby-plugin-mdx": "^1.0.23",
+    "prop-types": "^15.7.2",
+    "react-helmet": "^5.2.1"
+  }
+}

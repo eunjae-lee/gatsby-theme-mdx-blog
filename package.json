@@ -1,0 +1,17 @@
+{
+  "name": "gatsby-theme-mdx-blog",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "blog:bare": "yarn workspace blog-bare develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eunjae Lee <karis612@gmail.com> (https://github.com/eunjae-lee)",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ]
+}
