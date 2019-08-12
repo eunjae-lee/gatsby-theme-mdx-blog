@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "blog:bare": "yarn workspace blog-bare develop",
+    "blog": "yarn workspace blog develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Eunjae Lee <karis612@gmail.com> (https://github.com/eunjae-lee)",
