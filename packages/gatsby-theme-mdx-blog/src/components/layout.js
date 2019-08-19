@@ -2,12 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import SEO from './seo';
 
-function Layout(opts) {
-  const { title, children } = opts;
-  console.log(opts.data);
+function Layout({ title, children }) {
   return (
     <>
       <SEO title={title} />
+      <p>current title is {title}</p>
       {children}
     </>
   );
