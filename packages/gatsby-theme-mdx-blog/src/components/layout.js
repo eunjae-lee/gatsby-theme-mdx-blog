@@ -1,19 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import SEO from './seo';
 
-function Layout({ title, children }) {
+function Layout({ title, pageContext = {}, children }) {
+  const { frontmatter = {} } = pageContext;
   return (
     <>
-      <SEO title={title} />
-      <p>current title is {title}</p>
+      <SEO title={frontmatter.title || title} />
       {children}
     </>
   );
 }
-
-Layout.propTypes = {
-  title: PropTypes.string.isRequired,
-};
 
 export default Layout;

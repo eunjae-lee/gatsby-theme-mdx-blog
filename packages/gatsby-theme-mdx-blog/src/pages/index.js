@@ -21,6 +21,11 @@ export const query = graphql`
           }
           id
           rawBody
+          timeToRead
+          excerpt
+          fields {
+            slug
+          }
         }
       }
     }
