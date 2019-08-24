@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import Layout from './layout';
 
 export default ({ data }) => {
-  console.log('data', data);
   return (
     <Layout title={data.site.siteMetadata.title}>
       {data.allMdx.edges.map(({ node }) => (
