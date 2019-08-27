@@ -18,7 +18,7 @@ export default () => (
         siteMetadata: { title, author },
       },
     }) => (
-      <h1 class="p-8 font-bold text-xl text-gray-800">
+      <h1 className="p-8 text-lg text-gray-800">
         <Link to="/">{author}</Link>
       </h1>
     )}

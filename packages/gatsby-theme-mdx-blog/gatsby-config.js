@@ -4,21 +4,16 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${process.cwd()}/src/pages`,
+        path: `${process.cwd()}/src/pages`, // load pages from working directory (blog)
       },
     },
     {
       resolve: `gatsby-plugin-mdx`,
-      options: {
-        defaultLayouts: {
-          default: require.resolve('./src/components/layout.js'),
-        },
-      },
     },
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
-        path: `${__dirname}/src/pages`,
+        path: `${__dirname}/src/pages`, // load pages from this package (theme)
       },
     },
   ],
