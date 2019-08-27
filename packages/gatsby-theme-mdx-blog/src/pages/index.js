@@ -12,7 +12,7 @@ export const query = graphql`
         description
       }
     }
-    allMdx {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           frontmatter {

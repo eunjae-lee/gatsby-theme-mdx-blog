@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql, Link } from 'gatsby';
 
 export default () => (
   <StaticQuery
@@ -18,19 +18,9 @@ export default () => (
         siteMetadata: { title, author },
       },
     }) => (
-      <header>
-        <p>
-          {title} by {author} (2)
-        </p>
-        <div class="md:flex bg-white rounded-lg p-6">
-          <div class="text-center md:text-left">
-            <h2 class="text-lg">Erin Lindford</h2>
-            <div class="text-purple-500">Customer Support</div>
-            <div class="text-gray-600">erinlindford@example.com</div>
-            <div class="text-gray-600">(555) 765-4321</div>
-          </div>
-        </div>
-      </header>
+      <h1 class="p-8 font-bold text-xl text-gray-800">
+        <Link to="/">{author}</Link>
+      </h1>
     )}
   />
 );
