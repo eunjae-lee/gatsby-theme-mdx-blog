@@ -6,6 +6,8 @@
   "scripts": {
     "blog": "yarn workspace blog develop",
     "tailwind": "yarn workspace tailwind develop -p 8001",
+    "blog:build": "yarn workspace blog build",
+    "tailwind:build": "yarn workspace tailwind build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Eunjae Lee <karis612@gmail.com> (https://github.com/eunjae-lee)",
