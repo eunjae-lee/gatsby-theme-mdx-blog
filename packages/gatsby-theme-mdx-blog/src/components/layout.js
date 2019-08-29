@@ -1,7 +1,7 @@
 import React from 'react';
 import SEO from './seo';
 import Header from './header';
-import ArticleWrapper from './articleWrapper';
+import PostWrapper from './postWrapper';
 
 function Layout(props) {
   const { title, pageContext, children } = props;
@@ -12,7 +12,7 @@ function Layout(props) {
       <SEO title={frontmatter.title || title} />
       <Header />
       {isPostContext ? (
-        <ArticleWrapper {...props}>{children}</ArticleWrapper>
+        <PostWrapper {...props}>{children}</PostWrapper>
       ) : (
         children
       )}

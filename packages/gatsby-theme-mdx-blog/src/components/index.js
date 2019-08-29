@@ -1,11 +1,11 @@
 import React from 'react';
 import Layout from './layout';
-import ArticleList from './articleList';
+import PostList from './postList';
 
 export default ({ data }) => {
   return (
     <Layout title={data.site.siteMetadata.title}>
-      <ArticleList data={data} />
+      <PostList data={data} />
     </Layout>
   );
 };
