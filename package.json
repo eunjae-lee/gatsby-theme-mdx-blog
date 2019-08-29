@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "blog": "yarn workspace blog develop",
-    "tailwind": "yarn workspace tailwind develop",
+    "tailwind": "yarn workspace tailwind develop -p 8001",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Eunjae Lee <karis612@gmail.com> (https://github.com/eunjae-lee)",

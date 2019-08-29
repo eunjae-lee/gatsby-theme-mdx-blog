@@ -9,6 +9,11 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          default: `${__dirname}/src/components/layout.js`,
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-page-creator`,

@@ -10,13 +10,13 @@ export default ({
   return (
     <MDXProvider
       components={{
-        h1: props => <h1 {...props} />,
-        h2: props => <h2 {...props} className="text-lg" />,
-        h3: props => <h3 {...props} />,
-        h4: props => <h4 {...props} />,
-        h5: props => <h5 {...props} />,
-        h6: props => <h6 {...props} />,
-        p: props => <p {...props} />,
+        h1: ({ children, ...props }) => <h1 {...props}>{children}</h1>,
+        h2: ({ children, ...props }) => <h2 {...props}>{children}</h2>,
+        h3: ({ children, ...props }) => <h3 {...props}>{children}</h3>,
+        h4: ({ children, ...props }) => <h4 {...props}>{children}</h4>,
+        h5: ({ children, ...props }) => <h5 {...props}>{children}</h5>,
+        h6: ({ children, ...props }) => <h6 {...props}>{children}</h6>,
+        p: ({ children, ...props }) => <p {...props}>{children}</p>,
       }}
     >
       <article className="p-8">
