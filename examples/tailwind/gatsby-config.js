@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `tailwind example`,
+    title: `Tailwind CSS example`,
     author: `Eunjae Lee`,
-    description: `A tailwind blog theme`,
+    description: `This is an example with Tailwind CSS.`,
   },
   plugins: [
     `gatsby-theme-mdx-blog`,

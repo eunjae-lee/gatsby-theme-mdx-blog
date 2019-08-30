@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `gastby-theme-mdx-blog example`,
+    title: `blog example`,
     author: `Eunjae Lee`,
-    description: `A bare blog theme`,
+    description: `This is a blog example.`,
   },
   plugins: [`gatsby-theme-mdx-blog`],
 };

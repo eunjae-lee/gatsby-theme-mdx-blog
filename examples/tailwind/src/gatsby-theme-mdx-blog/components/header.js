@@ -13,7 +13,7 @@ export default () => (
             description
           }
         }
-        file(relativePath: { eq: "ramiz-dedakovic-9SWHIgu8A8k-unsplash.jpg" }) {
+        file(relativePath: { eq: "profile.jpeg" }) {
           childImageSharp {
             fixed(width: 64, height: 64) {
               ...GatsbyImageSharpFixed
@@ -40,7 +40,7 @@ export default () => (
             style={{
               borderRadius: '9999px',
             }}
-            alt="Profile picture by https://unsplash.com/@ramche"
+            alt="Profile picture"
           />
           <div className="ml-4 mt-2">
             <p className="text-base text-gray-600">{author}</p>
