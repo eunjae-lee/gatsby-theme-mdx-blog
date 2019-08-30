@@ -13,6 +13,11 @@ module.exports = {
         defaultLayouts: {
           default: `${__dirname}/src/components/layout.js`,
         },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+          },
+        ],
       },
     },
     {

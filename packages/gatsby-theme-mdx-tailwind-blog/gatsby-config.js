@@ -1,6 +1,13 @@
 module.exports = {
   plugins: [
-    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        config: {
+          path: `${__dirname}/postcss.config.js`,
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {

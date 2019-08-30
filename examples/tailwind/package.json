@@ -17,6 +17,7 @@
     "gatsby-theme-mdx-blog": "0.0.1",
     "gatsby-theme-mdx-tailwind-blog": "0.0.1",
     "gatsby-transformer-sharp": "^2.2.12",
+    "prism-themes": "^1.1.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   }

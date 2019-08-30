@@ -16,7 +16,9 @@
     "@mdx-js/react": "^1.2.2",
     "gatsby-plugin-mdx": "^1.0.23",
     "gatsby-plugin-page-creator": "^2.1.5",
+    "gatsby-remark-prismjs": "^3.3.11",
     "gatsby-source-filesystem": "^2.1.9",
+    "prismjs": "^1.17.1",
     "prop-types": "^15.7.2",
     "react-helmet": "^5.2.1"
   }
