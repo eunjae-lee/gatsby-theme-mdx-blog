@@ -1,5 +1,7 @@
 module.exports = {
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -15,9 +17,16 @@ module.exports = {
         },
         gatsbyRemarkPlugins: [
           {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
           },
         ],
+        plugins: [`gatsby-remark-images`], // https://github.com/gatsbyjs/gatsby/issues/15486
       },
     },
     {
