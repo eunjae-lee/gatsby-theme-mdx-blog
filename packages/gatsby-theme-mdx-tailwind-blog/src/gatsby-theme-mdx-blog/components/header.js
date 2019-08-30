@@ -40,6 +40,7 @@ export default () => (
             style={{
               borderRadius: '9999px',
             }}
+            alt="Profile picture by https://unsplash.com/@ramche"
           />
           <div className="ml-4 mt-2">
             <p className="text-base text-gray-600">{author}</p>
