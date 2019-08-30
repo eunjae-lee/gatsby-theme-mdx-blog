@@ -9,19 +9,21 @@ export default () => (
           siteMetadata {
             title
             author
+            description
           }
         }
       }
     `}
     render={({
       site: {
-        siteMetadata: { title, author },
+        siteMetadata: { title, author, description },
       },
     }) => (
       <header>
         <p>
           {title} by {author}
         </p>
+        <p>{description}</p>
       </header>
     )}
   />
