@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from './seo';
 import Header from './header';
+import LayoutWrapper from './layoutWrapper';
 import PostWrapper from './postWrapper';
 
 function Layout(props) {
@@ -8,7 +9,7 @@ function Layout(props) {
   const { frontmatter = {} } = pageContext || {};
   const isPostContext = Boolean(pageContext);
   return (
-    <>
+    <LayoutWrapper>
       <SEO title={frontmatter.title || title} />
       <Header />
       {isPostContext ? (
@@ -16,7 +17,7 @@ function Layout(props) {
       ) : (
         children
       )}
-    </>
+    </LayoutWrapper>
   );
 }
 

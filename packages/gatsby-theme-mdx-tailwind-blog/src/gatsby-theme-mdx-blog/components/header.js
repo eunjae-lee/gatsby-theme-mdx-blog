@@ -34,7 +34,7 @@ export default () => (
         <h1 className="p-8 text-lg text-gray-800">
           <Link to="/">{title}</Link>
         </h1>
-        <div className="px-8 pb-8 flex">
+        <div className="px-8 pb-16 flex">
           <Img
             fixed={fixed}
             style={{
