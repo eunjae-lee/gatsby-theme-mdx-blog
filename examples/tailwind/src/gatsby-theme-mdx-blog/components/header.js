@@ -43,7 +43,7 @@ export default () => (
             alt="Profile picture"
           />
           <div className="ml-4 mt-2">
-            <p className="text-base text-gray-600">{author}</p>
+            <p className="text-base text-gray-700">{author}</p>
             <p className="text-sm text-gray-700">{description}</p>
           </div>
         </div>
