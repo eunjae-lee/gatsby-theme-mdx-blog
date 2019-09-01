@@ -1,2 +1,2 @@
 import React from 'react';
-export default () => <p>third</p>;
+export default () => <p>This is the third page.</p>;
