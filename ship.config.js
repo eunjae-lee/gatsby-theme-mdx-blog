@@ -5,17 +5,10 @@ module.exports = {
     packagesToPublish: ['packages/*'],
   },
   versionUpdated: ({ version, dir, exec }) => {
-    const updateVersion = (filePath, expression) =>
-      exec(`npx json -I -f ${filePath} -e '${expression} = "${version}"'`);
-
-    updateVersion('package.json', 'this.version');
-    updateVersion(
-      'examples/blog/package.json',
-      'this.dependencies["gatsby-theme-mdx-blog"]'
-    );
-    updateVersion(
-      'examples/tailwind/package.json',
-      'this.dependencies["gatsby-theme-mdx-tailwind-blog"]'
+    exec(`npx json -I -f package.json -e 'this.version = "${version}"'`);
+    exec(`yarn workspace blog add gatsby-theme-mdx-blog@${version}`);
+    exec(
+      `yarn workspace tailwind add gatsby-theme-mdx-tailwind-blog@${version}`
     );
   },
 };
