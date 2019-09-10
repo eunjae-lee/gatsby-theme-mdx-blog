@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "blog": "yarn workspace blog develop",
-    "tailwind": "yarn workspace tailwind develop -p 8001",
-    "blog:build": "yarn workspace blog build",
-    "tailwind:build": "yarn workspace tailwind build",
+    "example": "yarn workspace blog develop",
+    "example:build": "yarn workspace blog build",
     "release:prepare": "shipjs prepare",
     "release:trigger": "shipjs trigger",
     "build": "echo \"Nothing to build\"",
