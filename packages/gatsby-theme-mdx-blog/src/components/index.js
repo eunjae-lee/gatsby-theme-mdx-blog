@@ -1,11 +1,21 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Layout from './layout';
-import PostList from './postList';
 
 export default ({ data }) => {
   return (
     <Layout title={data.site.siteMetadata.title}>
-      <PostList data={data} />
+      {data.allMdx.edges.map(({ node }) => (
+        <article key={node.fields.slug}>
+          <h1>
+            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+          </h1>
+          <p>{node.frontmatter.description}</p>
+          <footer>
+            <p>{node.frontmatter.date}</p>
+          </footer>
+        </article>
+      ))}
     </Layout>
   );
 };
