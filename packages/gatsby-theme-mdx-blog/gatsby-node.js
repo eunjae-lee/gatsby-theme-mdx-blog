@@ -1,5 +1,8 @@
 const { createFilePath } = require('gatsby-source-filesystem');
 
+const withoutTrailingSlash = value =>
+  value.endsWith('/') ? value.slice(0, value.length - 1) : value;
+
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
   // We only want to operate on `Mdx` nodes. If we had content from a
@@ -15,7 +18,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       // Generated value based on filepath with "blog" prefix. We
       // don't need a separating "/" before the value because
       // createFilePath returns a path with the leading "/".
-      value,
+      value: withoutTrailingSlash(value),
     });
   }
 };
